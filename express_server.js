@@ -12,7 +12,7 @@ const urlDatabase = {
 app.get('/', (req, res) => {
   res.send('Hello!');
 });
-app.get('/url', (req, res) =>{
+app.get('/urls', (req, res) =>{
   const templateVars = {urls : urlDatabase };
   res.render('urls_index', templateVars);
 
